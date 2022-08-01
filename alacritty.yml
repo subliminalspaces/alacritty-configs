@@ -52,7 +52,8 @@ cursor:
     shape: Beam # Block, Underline
     blinking: On # Never, Off, Always
     blink_interval: 750
-    thickness: 0.15
+    thickness: 0.00 # If set, shape defaults to Block
+  vi_mode_style: None
 selection:
   # This string contains all characters that are used as separators for
   # "semantic words" in Alacritty.
