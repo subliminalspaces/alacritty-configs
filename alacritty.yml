@@ -59,9 +59,12 @@ cursor:
   thickness: 0.10 # If set, shape defaults to Block
 live_config_reload: true
 shell:
-  program: /usr/bin/zsh
-  args:
-    - --login
+  # program: /usr/bin/zsh
+   # args:
+      # - l
+      # - -c
+      # - "tmux attach || tmux"
+    program: ubuntu
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
 working_directory: None
@@ -71,6 +74,7 @@ mouse:
   triple_click: { threshold: 300}
   hide_when_typing: true
 key_bindings:
+  - { key: Space, mods: Control, chars: "\x00"}
   - { key: Home, chars: "\x1bOH", mode: AppCursor }
   - { key: Home, chars: "\x1b[H", mode: ~AppCursor }
   - { key: End, chars: "\x1bOF", mode: AppCursor }
