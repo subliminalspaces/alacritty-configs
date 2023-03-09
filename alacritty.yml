@@ -14,19 +14,19 @@ import:
 env:
   TERM: alacritty
 window:
-    startup_mode: Windowed # Maximized, Fullscreen, (macOS only) SimpleFullscreen
-    title: Alacritty
-    dynamic_title: true
-    class:
-      instance: Alacritty
-      general: Alacritty
+  startup_mode: Windowed # Maximized, Fullscreen, (macOS only) SimpleFullscreen
+  title: Alacritty
+  dynamic_title: true
+  class:
+    instance: Alacritty
+    general: Alacritty
     #    dimensions:
         #columns: 0
         #lines: 0
-    padding:
-      x: 5
-      y: 0
-    opacity: 0.8
+  padding:
+    x: 5
+    y: 0
+  opacity: 0.8
 scrolling:
   history: 10000
   multiplier: 5
@@ -61,8 +61,8 @@ shell:
    program: /usr/bin/zsh
    args:
      - -l
-     - -c
-     - "tmux new -f ~/.config/tmux/tmux.conf"
+       #- -c
+       # - "tmux new -f ~/.config/tmux/tmux.conf"
      #     program: ubuntu
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
