@@ -60,9 +60,9 @@ live_config_reload: true
 shell:
    program: /usr/bin/zsh
    args:
-     - -l
-       #- -c
-       # - "tmux new -f ~/.config/tmux/tmux.conf"
+     #- -l
+     - -c
+     - "tmux new -f ~/.config/tmux/tmux.conf"
      #     program: ubuntu
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
